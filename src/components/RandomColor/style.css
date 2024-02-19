@@ -1,0 +1,37 @@
+.btn {
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 5px;
+  color: white;
+  border: 3px solid #30b61e;
+  background: linear-gradient(to left, #006175 20%, #26c6cc 100%);
+}
+.btn:hover {
+  font-size: medium;
+}
+.div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  gap: 5;
+  margin: 50px;
+}
+.btns {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .div {
+    height: fit-content;
+    width: fit-content;
+    padding: 0.5rem;
+  }
+  .btns {
+    display: grid;
+    grid-template-columns: 50%;
+  }
+}
